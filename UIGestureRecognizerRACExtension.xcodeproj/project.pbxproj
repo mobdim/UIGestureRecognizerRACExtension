@@ -141,6 +141,7 @@
 				32C4DDC21BA2E436007C03E4 /* Frameworks */,
 				32C4DDC31BA2E436007C03E4 /* Headers */,
 				32C4DDC41BA2E436007C03E4 /* Resources */,
+				32C4DDEF1BA317F2007C03E4 /* Carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +221,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32C4DDEF1BA317F2007C03E4 /* Carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			name = "Carthage copy frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32C4DDC11BA2E436007C03E4 /* Sources */ = {
